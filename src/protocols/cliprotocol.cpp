@@ -2464,7 +2464,7 @@ void CLIProtocol::CommandLoop()
         // Use linenoise features only if input comes from (pseudo)terminal.
         if (_isatty(_fileno(stdin)))
         {
-            linenoiseInstallWindowChangeHandler();
+            // linenoiseInstallWindowChangeHandler();
             linenoiseHistorySetMaxLen(DefaultHistoryDepth);
             linenoiseHistoryLoad(HistoryFileName);
 
